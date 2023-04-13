@@ -190,6 +190,118 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/04/13/%E8%A1%A8%E7%9A%84%E5%85%B3%E8%81%94%E5%85%B3%E7%B3%BB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="itsx007">
+      <meta itemprop="description" content="万家灯火">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ITZ-Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/04/13/%E8%A1%A8%E7%9A%84%E5%85%B3%E8%81%94%E5%85%B3%E7%B3%BB/" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
+
+        <div class="post-meta">
+
+          
+            <i class="fa fa-thumb-tack"></i>
+            <font color=7D26CD>置顶</font>
+            <span class="post-meta-divider">|</span>
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-04-13 20:13:18 / 修改时间：20:31:57" itemprop="dateCreated datePublished" datetime="2023-04-13T20:13:18+08:00">2023-04-13</time>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>467</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+           <span id="more"></span>
+
+<h2 id="1、Spring-Data-JPA-关系映射"><a href="#1、Spring-Data-JPA-关系映射" class="headerlink" title="1、Spring Data JPA 关系映射"></a>1、Spring Data JPA 关系映射</h2><p>对象关系映射（Object relational mapping）是指通过将对象状态映射到数据库列，来开发和维护对象和 关系数据库之间的关系。它能够轻松处理（执行）各种数据库操作，如插入、更新、删除等。</p>
+<p>关系映射的注解：</p>
+<table>
+<thead>
+<tr>
+<th align="center">注解</th>
+<th align="center">年龄</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">@JoinColumn</td>
+<td align="center">指定一个实体组织或实体集合。用在“多对一”和“一对多”的关联中。</td>
+</tr>
+<tr>
+<td align="center">@OneToOne</td>
+<td align="center">定义表之间“一对一”的关系。</td>
+</tr>
+<tr>
+<td align="center">@OneToMany</td>
+<td align="center">定义表之间“一对多”的关系。</td>
+</tr>
+<tr>
+<td align="center">@ManyToOne</td>
+<td align="center">定义表之间“多对一”的关系。</td>
+</tr>
+<tr>
+<td align="center">@ManyToMany</td>
+<td align="center">定义表之间“多对多”的关系。</td>
+</tr>
+</tbody></table>
+<p>下面将介绍如何使用 Spring Data JPA 处理多张数据库表之间的关联关系。</p>
+<h2 id="2、-一对一查询"><a href="#2、-一对一查询" class="headerlink" title="2、 一对一查询"></a>2、 一对一查询</h2><p>一对一外键关联的配置比较简单，以公民实体对象和身份证实体对象为例，在表tab_people（公民表）中添加一个字段“card_id”，作为该表的外键，同时需要保证该字段的唯一性，否则就不是一对一映射关系了，而是一对多映射关系。表tab_people和tab_idcard（身份证表）之间的关联关系如下图所示。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2023/04/10/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -346,7 +458,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

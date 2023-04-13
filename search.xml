@@ -5,6 +5,19 @@
     
     <entry>
       <title>Hello World</title>
+      <link href="/2023/04/13/%E8%A1%A8%E7%9A%84%E5%85%B3%E8%81%94%E5%85%B3%E7%B3%BB/"/>
+      <url>/2023/04/13/%E8%A1%A8%E7%9A%84%E5%85%B3%E8%81%94%E5%85%B3%E7%B3%BB/</url>
+      
+        <content type="html"><![CDATA[ <span id="more"></span><h2 id="1、Spring-Data-JPA-关系映射"><a href="#1、Spring-Data-JPA-关系映射" class="headerlink" title="1、Spring Data JPA 关系映射"></a>1、Spring Data JPA 关系映射</h2><p>对象关系映射（Object relational mapping）是指通过将对象状态映射到数据库列，来开发和维护对象和 关系数据库之间的关系。它能够轻松处理（执行）各种数据库操作，如插入、更新、删除等。</p><p>关系映射的注解：</p><table><thead><tr><th align="center">注解</th><th align="center">年龄</th></tr></thead><tbody><tr><td align="center">@JoinColumn</td><td align="center">指定一个实体组织或实体集合。用在“多对一”和“一对多”的关联中。</td></tr><tr><td align="center">@OneToOne</td><td align="center">定义表之间“一对一”的关系。</td></tr><tr><td align="center">@OneToMany</td><td align="center">定义表之间“一对多”的关系。</td></tr><tr><td align="center">@ManyToOne</td><td align="center">定义表之间“多对一”的关系。</td></tr><tr><td align="center">@ManyToMany</td><td align="center">定义表之间“多对多”的关系。</td></tr></tbody></table><p>下面将介绍如何使用 Spring Data JPA 处理多张数据库表之间的关联关系。</p><h2 id="2、-一对一查询"><a href="#2、-一对一查询" class="headerlink" title="2、 一对一查询"></a>2、 一对一查询</h2><p>一对一外键关联的配置比较简单，以公民实体对象和身份证实体对象为例，在表tab_people（公民表）中添加一个字段“card_id”，作为该表的外键，同时需要保证该字段的唯一性，否则就不是一对一映射关系了，而是一对多映射关系。表tab_people和tab_idcard（身份证表）之间的关联关系如下图所示。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
       <link href="/2023/04/10/hello-world/"/>
       <url>/2023/04/10/hello-world/</url>
       
